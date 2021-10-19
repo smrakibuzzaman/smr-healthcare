@@ -1,0 +1,45 @@
+[
+    {
+        "id": "smr01",
+        "name": "Clinical Nutrition",
+        "initial": "The experts in the Center for Human Nutrition offer personalized and results-oriented expert care.",
+        "description": "The SMR Health Care for Human Nutrition is at the forefront of clinical practice and nutrition research. Our aim is to help patients and the community understand how nutrition affects overall health and wellness.We offer a variety of nutrition programs to help you become your healthiest self. Our team addresses the unique barriers and challenges that keep you from achieving your weight loss or health goals.",
+        "image": "https://iili.io/5ngky7.jpg"
+    },
+    {
+        "id": "smr02",
+        "name": "Long COVID",
+        "initial": "SMR Health Care health experts collaborate across departments to offer comprehensive care for people with long-haul COVID symptoms. We draw on our knowledge and expertise to help you recover from long COVID.",
+        "description": "The U.S. Centers for Disease Control and Prevention (CDC) define long COVID as a group of symptoms that linger for weeks or months after a COVID-19 infection. About one out of every three people who had coronavirus develops long COVID or “long haulers.” These symptoms can cause problems in multiple organs and body systems at once. Even people who had a mild case of the virus can have persistent COVID symptoms that disrupt their daily life.Specialists at UCLA Health are uniquely qualified to diagnose, manage and treat lingering symptoms of COVID-19. Since the beginning of the pandemic, our specialists have been at the forefront of exceptional, compassionate care for people with coronavirus. As leaders in long COVID care, we put our knowledge to work for you. You’ll receive expert care from a top team of multidisciplinary specialists devoted to your recovery.",
+        "image": "https://iili.io/5ng4Gj.jpg"
+    },
+    {
+        "id": "smr03",
+        "name": "Digestive Diseases",
+        "initial": "Our digestive diseases experts are national and international leaders in gastrointestinal care.",
+        "description": "The specialists in the Vatche and Tamar Manoukian Division of Digestive Diseases have been national and international leaders in gastroenterology for more than 65 years. Our program is ranked No. 4 in the nation for gastroenterology and gastrointestinal surgery by U.S. News & World Report.We provide care for both common and rare digestive conditions.",
+        "image": "https://iili.io/5ngi3Q.jpg"
+    },
+    {
+        "id": "smr04",
+        "name": "Pathology & Laboratory Medicine",
+        "initial": "Pathologists assist with diagnoses and conduct research that helps expand treatment options.",
+        "description": "The Department of Pathology and Laboratory Medicine is an integral part of both the research and clinical programs at SMR Health Care. Not only do we assist with diagnoses, but we also conduct research and clinical trials to expand care options.",
+        "image": "https://iili.io/5ngQyP.jpg"
+    },
+    {
+        "id": "smr05",
+        "name": "Hospitalists",
+        "initial": "Hospitalists are internal medicine physicians who care for patients while they’re in the hospital. They deliver seamless, coordinated care through close collaboration with your primary care doctor.",
+        "description": "Our skilled hospital-based doctors, known as hospitalists, have years of experience caring for patients in the hospital. Our hospitalists oversee your inpatient care and work with your primary care doctor after you’re discharged.We understand that a hospital stay can be stressful. Our experienced hospital doctors take time to reassure, educate and follow up with patients and family members. ",
+        "image": "https://iili.io/5ngpna.png"
+    },
+    {
+        "id": "smr06",
+        "name": "Geriatric Medicine",
+        "initial": "Geriatricians provide a comprehensive range of services for our senior patients.",
+        "description": "Through our Division of Geriatrics, we provide exceptional care for seniors. We have achieved national recognition for our excellence — U.S. News & World Report ranks us No. 4 in the country for geriatric care.",
+        "image": "https://iili.io/5nr96v.jpg"
+    }
+    
+]
