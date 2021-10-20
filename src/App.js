@@ -3,18 +3,21 @@ import './App.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Contact from './components/Contact/Contact';
-import Footer from './components/Footer/Footer';
 import Navigation from './components/Navigation/Navigation';
 import NotFound from './components/NotFound/NotFound';
 import About from './components/About/About';
 import Services from './components/Services/Services';
 import Blog from './components/Blog/Blog';
 import Login from './components/Login/Login';
+import Details from './components/Details/Details';
+import AuthProvider from './contexts/AuthProvider';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+     <AuthProvider>
+     <BrowserRouter>
             <Navigation></Navigation>
       <Switch>
          <Route exact path="/">
@@ -33,9 +36,13 @@ function App() {
           <Services></Services>
 </Route>
 
-<Route path="/blog">
+<PrivateRoute exact path="/details/:serviceDescription">
+            <Details></Details>
+</PrivateRoute>
+
+<PrivateRoute path="/blog">
           <Blog></Blog>
-</Route>
+</PrivateRoute>
 
 
 <Route path="/contact">
@@ -53,6 +60,7 @@ function App() {
       </Switch>
 
       </BrowserRouter>
+     </AuthProvider>
     </div>
   );
 }

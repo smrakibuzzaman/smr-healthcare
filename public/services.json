@@ -9,7 +9,7 @@
     {
         "id": "smr02",
         "name": "Long COVID",
-        "initial": "SMR Health Care health experts collaborate across departments to offer comprehensive care for people with long-haul COVID symptoms. We draw on our knowledge and expertise to help you recover from long COVID.",
+        "initial": "Our health experts collaborate across departments to offer comprehensive care for people with long-haul COVID symptoms.",
         "description": "The U.S. Centers for Disease Control and Prevention (CDC) define long COVID as a group of symptoms that linger for weeks or months after a COVID-19 infection. About one out of every three people who had coronavirus develops long COVID or “long haulers.” These symptoms can cause problems in multiple organs and body systems at once. Even people who had a mild case of the virus can have persistent COVID symptoms that disrupt their daily life.Specialists at UCLA Health are uniquely qualified to diagnose, manage and treat lingering symptoms of COVID-19. Since the beginning of the pandemic, our specialists have been at the forefront of exceptional, compassionate care for people with coronavirus. As leaders in long COVID care, we put our knowledge to work for you. You’ll receive expert care from a top team of multidisciplinary specialists devoted to your recovery.",
         "image": "https://iili.io/5ng4Gj.jpg"
     },
@@ -30,7 +30,7 @@
     {
         "id": "smr05",
         "name": "Hospitalists",
-        "initial": "Hospitalists are internal medicine physicians who care for patients while they’re in the hospital. They deliver seamless, coordinated care through close collaboration with your primary care doctor.",
+        "initial": "Hospitalists are internal medicine physicians who care for patients while they’re in the hospital.",
         "description": "Our skilled hospital-based doctors, known as hospitalists, have years of experience caring for patients in the hospital. Our hospitalists oversee your inpatient care and work with your primary care doctor after you’re discharged.We understand that a hospital stay can be stressful. Our experienced hospital doctors take time to reassure, educate and follow up with patients and family members. ",
         "image": "https://iili.io/5ngpna.png"
     },
