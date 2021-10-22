@@ -40,12 +40,14 @@ const handleSubmit =e=> {
 }
   
 
-const updatedNewUser = ()=> {
+const setNewUser = ()=> {
   updateProfile(auth.currentUser, {
     displayName: updatedName
   }).then(() => {
     
-  })
+  }).catch((error) => {
+    
+  });
 }
 
  const createNewUserWithEmail =(email, password)=>{
@@ -53,7 +55,7 @@ const updatedNewUser = ()=> {
 .then(result=>{
   const user = result.user;
   setError("");
-  updatedNewUser();
+  setNewUser();
 
 })
 .catch(error=>{

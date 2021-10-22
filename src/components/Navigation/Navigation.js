@@ -21,8 +21,8 @@ const Navigation = () => {
       <Nav.Link as={NavLink} to="/home">Home</Nav.Link>
       <Nav.Link as={NavLink} to="/about">About</Nav.Link>
       <Nav.Link as={NavLink} to="/services">Services</Nav.Link>
-      <Nav.Link as={NavLink} to="/details">Details</Nav.Link>
       <Nav.Link as={NavLink} to="/blog">Blog</Nav.Link>
+      <Nav.Link as={NavLink} to="/feedback">Feedback</Nav.Link>
      {user.email ? <Button onClick={logOut} variant="light">Logout</Button> : 
      <Nav.Link as={NavLink} to="/login">Login</Nav.Link>}
       <Navbar.Toggle />

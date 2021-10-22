@@ -14,7 +14,7 @@ const Register = () => {
 <input onBlur={handleEmail} type="email" name="" id="" placeholder="Email"/>  <br />                 
 <input onBlur={handlePassword} type="password" name="" id="" placeholder="password" /> <br />
 <h6 className="text-danger">{error}</h6>
-<input onClick={handleSubmit} type="submit" value="submit" />
+<button onClick={handleSubmit} className="btn btn-primary"type="submit">{isLogin ? "Login" : "Register"}</button>
 <p> <input onChange={toggleLogin} type="checkbox" name="checkbox" id="" /> Already have an account?
     <br />
     <Link to="/login">Login</Link>

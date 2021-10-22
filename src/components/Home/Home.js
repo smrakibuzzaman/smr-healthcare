@@ -8,9 +8,8 @@ import Navigation from '../Navigation/Navigation';
 const Home = () => {
     return (
         <div>
+           <Header> </Header>
            
-           
-            <Header> </Header>
             <Contact> </Contact>
          
         </div>
