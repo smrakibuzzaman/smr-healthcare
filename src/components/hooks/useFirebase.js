@@ -1,11 +1,77 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider,  signOut, onAuthStateChanged} from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider,  signOut, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile} from "firebase/auth";
 import { useEffect, useState } from "react";
 
 const useFirebase = ()=>{
+  const [updatedName, setUpdatedName] = useState("");
 const [user, setUser]= useState({});
+const [email, setEmail]= useState("");
+const [password, setPassword]= useState("");
 const [isLoading, setIsLoading] = useState(true);
+const [isLogin, setIsLogin] = useState(false);
+const [error, setError] = useState("");
 const auth = getAuth();
 
+
+
+const handleUpdateUser = e => {
+  setUpdatedName(e.target.value)
+}
+const handleSubmit =e=> {
+  e.preventDefault();
+  if (password.length < 6) {
+    setError("At least six characters required for password")
+    return;
+  }
+
+
+  isLogin? existingUserLogin(email, password) : createNewUserWithEmail(email, password); 
+ }
+
+ const existingUserLogin= (email,password) => {
+  signInWithEmailAndPassword(auth, email, password)
+  .then(result=>{
+    const user = result.user;
+    setError("");
+    
+  })
+  .catch(error=>{
+    setError(error.message)
+  })
+}
+  
+
+const updatedNewUser = ()=> {
+  updateProfile(auth.currentUser, {
+    displayName: updatedName
+  }).then(() => {
+    
+  })
+}
+
+ const createNewUserWithEmail =(email, password)=>{
+  createUserWithEmailAndPassword(auth, email, password)
+.then(result=>{
+  const user = result.user;
+  setError("");
+  updatedNewUser();
+
+})
+.catch(error=>{
+  setError(error.message)
+})
+
+}
+
+  const handleEmail =e=> {
+     setEmail(e.target.value); }
+  
+     const handlePassword =e=> {
+      setPassword(e.target.value);
+  
+      }
+const toggleLogin = e=> {
+  setIsLogin(e.target.checked);
+}
 
 const signInUsingGoogle=()=> {
     setIsLoading(true);
@@ -37,9 +103,19 @@ useEffect(()=>{
 
 return{
     user,
+    email,
+    password,
     signInUsingGoogle,
     logOut,
-    isLoading
+    isLoading, 
+    error,
+    handleUpdateUser,
+    handleSubmit,
+    handleEmail,
+     handlePassword,
+     toggleLogin, 
+     isLogin,
+
 }
 }
 
