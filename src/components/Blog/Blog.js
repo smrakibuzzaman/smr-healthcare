@@ -1,10 +1,11 @@
 import React from 'react';
 import Contact from '../Contact/Contact';
+import Header from '../Header/Header';
 
 const Blog = () => {
     return (
         <div>
-
+<Header/>
 <div className="container">
     <h1 className="text-secondary fw-bold" >Blog</h1>
     <h3>Reduce medication errors with manufacturer-enabled RFID</h3>

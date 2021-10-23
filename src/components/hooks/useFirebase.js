@@ -30,7 +30,7 @@ const handleSubmit =e=> {
  const existingUserLogin= (email,password) => {
   signInWithEmailAndPassword(auth, email, password)
   .then(result=>{
-    const user = result.user;
+   
     setError("");
     
   })
@@ -53,7 +53,7 @@ const setNewUser = ()=> {
  const createNewUserWithEmail =(email, password)=>{
   createUserWithEmailAndPassword(auth, email, password)
 .then(result=>{
-  const user = result.user;
+ 
   setError("");
   setNewUser();
 

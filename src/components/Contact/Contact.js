@@ -31,7 +31,7 @@ const Contact = () => {
 <li><Link to="/about" className="text-white decoration">About Us</Link></li>
 <li><Link to="/services" className="text-white decoration">Services</Link></li>
 <li><Link to="/blog" className="text-white decoration">Blog</Link></li>
-<li><Link to="/contact" className="text-white decoration">Contact Us</Link></li>
+<li><Link to="/feedback" className="text-white decoration">Feedback</Link></li>
 
 </ul>
                     </Col>

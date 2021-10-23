@@ -1,10 +1,12 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import Contact from '../Contact/Contact';
+import Header from '../Header/Header';
 import aboutImg from './../../images/banner/banner4.jpg'
 const About = () => {
     return (
         <div>
+            <Header/>
        <div className="container text-center text-dark"  
  >
            <h1 className="text-secondary fw-bold ">About Us</h1>

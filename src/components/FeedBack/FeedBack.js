@@ -1,10 +1,11 @@
 import React from 'react';
 import Contact from '../Contact/Contact';
+import Header from '../Header/Header';
 
 const FeedBack = () => {
     return (
         <div>
-            
+            <Header/>
 <div className="container fw-bold">
     <h1 className="text-secondary fw-bold">Your Feedback</h1>
     <p>
