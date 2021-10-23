@@ -1,5 +1,4 @@
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import firstBanner from '../../images/banner/banner1.jpg'
 import  './Header.css'

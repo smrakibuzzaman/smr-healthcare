@@ -5,10 +5,10 @@ import useAuth from '../hooks/useAuth';
 
 const ServiceDetails = () => {
    const {serviceId} = useParams();
-   console.log(serviceId);
+  
 
    const [serviceDetail, setServiceDetail] = useState([]);
-   console.log(serviceDetail);
+   
 
    useEffect( ()=>{
     fetch("/services.json")
@@ -17,7 +17,7 @@ const ServiceDetails = () => {
 },[])
 
 const details = serviceDetail.find(detail=>detail.id === serviceId );
-console.log(details);
+
     return (
         <div>
     
